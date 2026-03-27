@@ -1,0 +1,122 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.container {
+  width: 350px;
+  padding: 35px 30px;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+
+  text-align: center;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+
+h2 {
+  margin-bottom: 25px;
+  color: #333;
+  font-weight: 600;
+}
+
+
+input {
+  width: 100%;
+  padding: 12px 14px;
+  margin: 10px 0;
+
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 6px rgba(102, 126, 234, 0.5);
+  outline: none;
+}
+
+
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: linear-gradient(to right, #667eea, #5a67d8);
+  color: white;
+
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+
+p {
+  margin-top: 18px;
+  font-size: 14px;
+  color: #667eea;
+  cursor: pointer;
+}
+
+
+p:hover {
+  text-decoration: underline;
+}
+
+
+h3 {
+  margin-top: 15px;
+  color: #333;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+  .error {
+  color: red;
+  font-size: 12px;
+  text-align: left;
+  margin-top: -5px;
+  margin-bottom: 5px;
+}
+
+.error-input {
+  border: 1px solid red;
+}
